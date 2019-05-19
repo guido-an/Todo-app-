@@ -8,15 +8,15 @@ class AddTodo extends Component {
 
    handleSubmit = (e) => {
      e.preventDefault()
-     this.props.addTodo(this.state)
+     this.props.addTodo(this.state)  // this.state = todo in App.js (addTodo = (todo){})
      this.setState({
-       content: ""
+       content: ""    // reset the input after submit
      })
    }
 
    handleChange = (e) => {
      this.setState({
-       content: e.target.value
+       content: e.target.value   
      })
     
    }
