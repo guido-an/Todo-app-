@@ -13,6 +13,7 @@ const Todos = ({todos, deleteTodo}) => {
    
   return (
     <div>
+    <h1>Todo's</h1>
      {todosList}
     </div>
   );
